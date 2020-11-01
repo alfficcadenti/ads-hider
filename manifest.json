@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Ads-Hider",
+    "version": "1.0",
+  
+    "description": "hide ads block in search engines",
+  
+    "icons": {
+      //"48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.qwant.com/*"],
+        "js": ["ads-hider.js"]
+      }
+    ]
+  
+  }
